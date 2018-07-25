@@ -1,0 +1,7 @@
+spring:
+  ldap:
+# ha az url ldap://192.168.9.143:389, akkor nem hasal el, de a result size 0
+# ha az url ldap://192.168.9.143:389/CN=ntak01,DC=ntakadmin,DC=com, akkor elhasal, hogy nem találja a dir-ben a user-t
+     url: ldap://192.168.9.143:389/CN=ntak01,DC=ntakadmin,DC=com
+     rootDN: CN=ntak01,DC=ntakadmin,DC=com
+
